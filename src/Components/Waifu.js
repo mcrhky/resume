@@ -4,8 +4,9 @@ class Waifu extends Component {
   render() {
 
     if(this.props.data){
+      // var purl = this.props.data.purl;
       var deets = this.props.data.deets.map(function(deets){
-        var deetsImage = 'images/'+deets.image;
+        var deetsImage = 'https://mcrhky.github.io/resume/images/'+deets.image;
         return <div key={deets.title} className="three columns main-col">
           <div className="well ftr-well text-center">
             <img className="ftr-img" src={deetsImage} alt="" />
